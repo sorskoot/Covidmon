@@ -1,0 +1,1093 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "transformation": [
+                0.7160133123397827,
+                0.0,
+                0.6980865001678467,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.6980865001678467,
+                0.0,
+                0.7160133123397827,
+                0.0,
+                0.0,
+                1.7999999523162842,
+                0.0,
+                1.0
+            ]
+        },
+        "15": {
+            "name": "FloorPlane",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0016164779663085938,
+                -3.999999761581421,
+                0.0,
+                0.0,
+                3.999999761581421,
+                -0.0016164779663085938,
+                0.0,
+                0.0,
+                0.0,
+                1.192092895507813e-7,
+                1.0
+            ],
+            "deleted": true
+        },
+        "16": {
+            "name": "Cube",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "22"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere",
+                        "box": {
+                            "extents": [
+                                0.5,
+                                0.5,
+                                0.5
+                            ]
+                        },
+                        "sphere": {
+                            "radius": 0.20000000298023225
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.5,
+                0.0,
+                2.9802322387695329e-8,
+                0.4999999403953552,
+                5.960464477539065e-8,
+                1.0
+            ],
+            "parent": "32",
+            "deleted": true
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                }
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.10000000149011612
+                    }
+                }
+            ],
+            "transformation": [
+                0.7160132527351379,
+                0.0,
+                -0.6980867385864258,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.6980867385864258,
+                0.0,
+                0.7160132527351379,
+                0.0,
+                2.9802322387695329e-8,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": "14"
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.10000000149011612
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.0,
+                3.0,
+                -1.0,
+                1.0
+            ]
+        },
+        "24": {
+            "name": "Cone",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "10",
+                        "material": "25"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.316391944885254,
+                0.0,
+                -2.6997666358947756,
+                1.0
+            ],
+            "parent": "32",
+            "deleted": true
+        },
+        "27": {
+            "name": "Sphere",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "transformation": [
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.5,
+                0.75,
+                -1.25,
+                1.0
+            ],
+            "parent": "32",
+            "deleted": true
+        },
+        "32": {
+            "name": "Sphere",
+            "transformation": [
+                0.25,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.25,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.25,
+                0.0,
+                1.2767921686172486,
+                1.0000004768371585,
+                -1.6725863218307496,
+                1.0
+            ]
+        },
+        "33": {
+            "name": "Empty.000",
+            "parent": null,
+            "components": [
+                {
+                    "type": "hit-test-location"
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "20"
+                    }
+                }
+            ],
+            "transformation": [
+                0.25,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.25,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.25,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "34": {
+            "name": "Left Hand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "hand-tracking",
+                    "hand-tracking": {
+                        "jointMesh": null,
+                        "jointMaterial": "20"
+                    },
+                    "active": false
+                }
+            ],
+            "deleted": true
+        },
+        "35": {
+            "name": "Right Hand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "finger-touch",
+                    "finger-touch": {
+                        "handedness": "right"
+                    }
+                }
+            ]
+        },
+        "36": {
+            "name": "Left Hand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "finger-touch"
+                }
+            ]
+        },
+        "37": {
+            "name": "Hand Menu",
+            "components": [
+                {
+                    "type": "hand-menu"
+                }
+            ],
+            "transformation": [
+                0.7160133719444275,
+                0.0,
+                -0.6980865597724915,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.6980865597724915,
+                0.0,
+                0.7160133719444275,
+                0.0,
+                -0.06358017772436142,
+                -0.000003933906555175781,
+                0.06198832765221596,
+                1.0
+            ],
+            "parent": "14"
+        },
+        "38": {
+            "name": "Button 2",
+            "parent": "41",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "40"
+                    }
+                },
+                {
+                    "type": "interactable"
+                }
+            ],
+            "transformation": [
+                0.012000076472759249,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.012000000104308129,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.012000000104308129,
+                0.0,
+                0.0000012367963790893557,
+                0.04813914746046066,
+                -0.000018596649169921876,
+                1.0
+            ]
+        },
+        "39": {
+            "name": "Text",
+            "parent": "38",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Demo 2"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2596065402030945,
+                1.0
+            ]
+        },
+        "41": {
+            "name": "menu Container",
+            "parent": "37",
+            "transformation": [
+                -1.000003457069397,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.00030207636882551014,
+                -1.0,
+                0.0,
+                0.0,
+                -1.0,
+                0.00030213597347028553,
+                0.0,
+                -0.10000021010637284,
+                0.0,
+                -0.05000010505318642,
+                1.0
+            ]
+        },
+        "42": {
+            "name": "BackPlate",
+            "parent": "41",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "40",
+                        "mesh": "7"
+                    }
+                }
+            ],
+            "transformation": [
+                0.01400032453238964,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.04199999943375588,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.000011667609214782717,
+                0.048946596682071689,
+                -0.007560253143310547,
+                1.0
+            ]
+        },
+        "43": {
+            "name": "Button 1",
+            "parent": "41",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "40"
+                    }
+                },
+                {
+                    "type": "interactable"
+                },
+                {
+                    "type": "random-object",
+                    "random-object": {
+                        "mesh": "8",
+                        "material": "40"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.012000000104308129,
+                                0.012000000104308129,
+                                0.004999999888241291
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                0.012000324204564097,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.012000000104308129,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.012000000104308129,
+                0.0,
+                0.000007644295692443848,
+                0.07531468570232392,
+                -0.000046133995056152347,
+                1.0
+            ]
+        },
+        "44": {
+            "name": "Text",
+            "parent": "43",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Demo 1"
+                    }
+                }
+            ],
+            "transformation": [
+                4.000003814697266,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.000002861022949,
+                1.1641532182693482e-10,
+                0.0,
+                0.0,
+                -1.788139343261719e-7,
+                1.0000007152557374,
+                0.0,
+                -0.0000019073486328125,
+                0.0,
+                0.2595977783203125,
+                1.0
+            ]
+        },
+        "45": {
+            "name": "Button 3",
+            "parent": "41",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "40"
+                    }
+                },
+                {
+                    "type": "interactable"
+                }
+            ],
+            "transformation": [
+                0.01200021430850029,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.012299999594688416,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.012000000104308129,
+                0.0,
+                0.000008359551429748536,
+                0.019879870116710664,
+                -0.000030994415283203128,
+                1.0
+            ]
+        },
+        "46": {
+            "name": "Text",
+            "parent": "45",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Demo 3"
+                    }
+                }
+            ],
+            "transformation": [
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                4.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2596065402030945,
+                1.0
+            ]
+        },
+        "48": {
+            "link": {
+                "name": "Top",
+                "file": "Assets\\VirusTop.glb"
+            },
+            "components": [
+                {
+                    "mesh": {
+                        "material": "20"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "49": {
+            "link": {
+                "name": "Default light",
+                "file": "Assets\\VirusTop.glb"
+            },
+            "deleted": true
+        },
+        "51": {
+            "link": {
+                "name": "Stem",
+                "file": "Assets\\VirusStem.glb"
+            },
+            "components": [
+                {
+                    "mesh": {
+                        "material": "20"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "52": {
+            "link": {
+                "name": "Default light",
+                "file": "Assets\\VirusStem.glb"
+            },
+            "deleted": true
+        },
+        "53": {
+            "name": "Mesh",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "mesh"
+                }
+            ]
+        },
+        "54": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.6887238025665284,
+                1.0,
+                -1.9175174236297608,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                }
+            ]
+        },
+        "55": {
+            "name": "Mesh.000",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "material": "56"
+                    }
+                }
+            ],
+            "deleted": true
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "47": {
+            "link": {
+                "name": "Top",
+                "file": "Assets\\VirusTop.glb"
+            },
+            "importScaling": 0.10000000149011612
+        },
+        "50": {
+            "link": {
+                "name": "Stem",
+                "file": "Assets\\VirusStem.glb"
+            },
+            "importScaling": 0.10000000149011612
+        }
+    },
+    "textures": {
+        "t0": {
+            "link": {
+                "name": "DefaultFont",
+                "file": "default"
+            },
+            "name": "DefaultFont"
+        }
+    },
+    "images": {
+        "f0": {
+            "link": {
+                "name": "DefaultFontImage",
+                "file": "default"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            }
+        },
+        "20": {
+            "name": "White",
+            "shader": "Phong",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.99993744699168e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 1
+            }
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039269447328,
+                    0.0,
+                    0.5411764979362488,
+                    0.0
+                ],
+                "specularColor": [
+                    9.999899930335233e-7,
+                    9.999911299019005e-7,
+                    9.999999974752428e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.3176470398902893,
+                    0.0,
+                    0.2165777683258057,
+                    1.0
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215803146362,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.384313702583313,
+                    0.3089579045772553,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.15294118225574494,
+                    0.7882353067398071,
+                    0.5411764979362488,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.23529410362243653,
+                    0.1437908560037613,
+                    1.0
+                ]
+            }
+        },
+        "40": {
+            "name": "Blue",
+            "Phong": {
+                "specularColor": [
+                    0.0,
+                    0.4464364051818848,
+                    1.0,
+                    0.0
+                ],
+                "diffuseColor": [
+                    0.0,
+                    0.4464333057403565,
+                    1.0,
+                    1.0
+                ]
+            },
+            "shader": "Phong",
+            "Flat": {
+                "color": [
+                    0.0,
+                    0.2588233947753906,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        "56": {
+            "name": "virusBaseMaterial",
+            "Phong": {
+                "ambientColor": [
+                    9.999999974752428e-7,
+                    9.999899930335233e-7,
+                    9.999899930335233e-7,
+                    1.0
+                ]
+            }
+        }
+    },
+    "shaders": {
+        "1": {
+            "link": {
+                "name": "DistanceFieldVector Textured",
+                "file": "default"
+            }
+        },
+        "2": {
+            "link": {
+                "name": "Flat",
+                "file": "default"
+            }
+        },
+        "3": {
+            "link": {
+                "name": "Flat Textured",
+                "file": "default"
+            }
+        },
+        "4": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "5": {
+            "link": {
+                "name": "Phong",
+                "file": "default"
+            }
+        },
+        "6": {
+            "link": {
+                "name": "Phong Textured",
+                "file": "default"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Dynamic",
+                "file": "default"
+            }
+        },
+        "29": {
+            "link": {
+                "name": "Particle Textured",
+                "file": "default"
+            }
+        },
+        "30": {
+            "link": {
+                "name": "Skinning",
+                "file": "default"
+            }
+        },
+        "31": {
+            "link": {
+                "name": "Static",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "Covidmon",
+            "version": [
+                0,
+                8,
+                4
+            ],
+            "customIndexHtml": false
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/components/",
+                "js/",
+                "js/components"
+            ]
+        },
+        "runtime": {
+            "webxr": {
+                "optionalFeatures": {
+                    "hit-test": false,
+                    "hand-tracking": false,
+                    "local": false,
+                    "plane-detection": false,
+                    "occlusion": false,
+                    "light-estimation": false,
+                    "anchors": false
+                },
+                "requiredFeatures": {
+                    "hand-tracking": true,
+                    "bounded-floor": false,
+                    "local-floor": false,
+                    "local": false,
+                    "plane-detection": false,
+                    "occlusion": false,
+                    "anchors": true,
+                    "hit-test": false,
+                    "unbounded": true
+                }
+            },
+            "visualizeColliders": true
+        },
+        "editor": {
+            "serverPort": 7550,
+            "camera": {
+                "near": 0.009999999776482582
+            }
+        },
+        "ar": {
+            "framework": "webxr"
+        },
+        "rendering": {
+            "clearColor": [
+                0.0,
+                0.0,
+                0.0,
+                0.003921568859368563
+            ],
+            "transparentBg": true,
+            "bloom": {
+                "enabled": false
+            }
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "files": [
+        "Assets/VirusTop.glb",
+        "Assets/VirusStem.glb"
+    ]
+}
