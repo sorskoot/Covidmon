@@ -1,0 +1,28 @@
+Must have:
+     ☐ spawn random virusses
+        ~ genome mutates a little
+        ~ fixed number of mutationPoints
+        ~ that determines the amount of damage, 
+           resistance to medicine or health
+        ~ variant names like English, South-African and Brazilian
+     ☐ attach virussus
+        ☐ T-Cells - balls we throw at the virus.
+        ☐ user upgrades
+            ☐ vaccines
+                ~ Phizor - 95% effective
+                ~ Moderno - 75% effective
+                ~ ZastroPanic - 50% effective
+            ☐ masks
+                ~ blocks attack of virus
+                ~ double mask to increase block
+            ☐ social distancing
+                ~ the more distance, the lower the damage you take
+                ~ more than 1.5m away, less damage.
+     
+Should have:
+       
+
+Could have:
+
+
+Would like:

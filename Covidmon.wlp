@@ -741,6 +741,21 @@
                         "spikes": 128,
                         "materialBase": "56"
                     }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
                 }
             ]
         },

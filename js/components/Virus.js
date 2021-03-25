@@ -5,7 +5,7 @@ WL.registerComponent('virus', {
     stem: { type: WL.Type.Mesh, default: null },
     sphere: { type: WL.Type.Mesh, default: null },
     materialBase: { type: WL.Type.Material },    
-    spikes: {type: WL.Type.Int, default: 128}
+    spikes: {type: WL.Type.Int, default: 128},
 }, {
     init: function () {
         // add sphere
@@ -51,8 +51,7 @@ WL.registerComponent('virus', {
             let newTopMesh = newTop.addComponent('mesh');
             newTopMesh.mesh=this.top;
             newTopMesh.material = topMaterial;
-        }
-
+        }        
     },    
     update: function (dt) {
         
