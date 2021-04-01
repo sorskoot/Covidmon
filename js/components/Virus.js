@@ -8,11 +8,16 @@ WL.registerComponent('virus', {
     spikes: {type: WL.Type.Int, default: 128},
 }, {
     init: function () {
+        this.hp = 5;
+
         // add sphere
         const randomDiameter = Math.random() / 8 + .125;
         const stemLength = Math.random()/4+.25;
         const topDiameter = Math.random()/4+.25;
-
+        
+        this.collision = this.object.getComponent('collision');
+        this.collision.extents[0]=randomDiameter+(randomDiameter*stemLength);
+        
         const sphere =  WL.scene.addObject(this.object);
         
         sphere.scale([randomDiameter,randomDiameter,randomDiameter]);

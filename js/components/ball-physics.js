@@ -1,34 +1,32 @@
-/**
-@brief Ball Physics
-
-Very rudimentary physics with gravity, pseudo-friction, bounciness
-and floor collisions.
-
-Computes velocity and position each frame until the velocity falls
-below a certain threshold, after which the component is deactivated.
-
-This component is also used to attach a "scored" property to track
-already scored paper balls. (See score-trigger and paperball-spawner).
-*/
 WL.registerComponent('ball-physics', {
     bounciness: {type: WL.Type.Float, default: 0.5},
     weight: {type: WL.Type.Float, default: 1.0}
 }, {
-    init: function() {
+    init: function() {        
         this.pos = new Float32Array(3);
         this.velocity = new Float32Array(3);
-
+        this.floorHeight=0;       
+    },
+    start:function(){
         this.collision = this.object.getComponent('collision', 0);
         if(!this.collision) {
             console.warn("'ball-physics' component on object", this.object.name, "requires a collision component");
         }
-        this.floorHeight=0;
     },
+    onCollision:function(object){
 
+    },
     update: function(dt) {
+        if(!this.collision) return;
         /* Remember the last position */
         this.object.getTranslationWorld(this.pos);
 
+        let overlaps = this.collision.queryOverlaps();
+        if(overlaps.length>0){
+            this.onCollision(overlaps[0].object)
+            this.active = false;        
+            return;
+        }
         /* Don't fall through the floor */
         if(this.pos[1] <= this.floorHeight + this.collision.extents[0]) {
             if(Math.abs(this.velocity[0]) <= 0.001) {
