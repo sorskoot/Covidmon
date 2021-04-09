@@ -7,6 +7,7 @@ WL.registerComponent('hover', {
 
     init: function() {
         this.count = Math.random() * Math.PI * 2;                      
+        this.speed+= Math.random()/4-.25;
     },
     update: function(dt) {      
         if(!this.count) return;

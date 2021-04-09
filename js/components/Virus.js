@@ -8,6 +8,18 @@ WL.registerComponent('virus', {
     spikes: {type: WL.Type.Int, default: 128},
 }, {
     init: function () {
+        let possibleColors = [
+            [.5,.5,.5,1],
+            [1,.1,.1,1],
+            [1,1,.1,1],
+            [.1,.1,1,1],
+            [.7,.3,.3,1],
+            [.3,.7,.3,1],
+            [.3,.3,.7,1],
+            [.7,.7,.3,1],
+            [.7,.3,.7,1],
+            [.3,.7,.7,1],
+        ]
         this.hp = 5;
 
         // add sphere
@@ -25,13 +37,13 @@ WL.registerComponent('virus', {
         sphereMesh.mesh = this.sphere;
 
         sphereMesh.material = this.materialBase.clone();
-        sphereMesh.material.diffuseColor = [.5,.5,.5,1];
+        sphereMesh.material.diffuseColor =possibleColors[~~(Math.random()*10)];
 
         const stemMaterial = this.materialBase.clone();
-        stemMaterial.diffuseColor = [.7,.3,.3,1];
+        stemMaterial.diffuseColor = possibleColors[~~(Math.random()*10)];
 
         const topMaterial = this.materialBase.clone();
-        topMaterial.diffuseColor = [1,.1,.1,1];
+        topMaterial.diffuseColor = possibleColors[~~(Math.random()*10)];
 
         const objects = WL.scene.addObjects(this.spikes*2, this.object, 1);
         for (let i = 0; i < this.spikes; i+=2) {

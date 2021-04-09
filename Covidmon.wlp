@@ -379,7 +379,10 @@
             "name": "Hand Menu",
             "components": [
                 {
-                    "type": "hand-menu"
+                    "type": "hand-menu",
+                    "hand-menu": {
+                        "eye": "18"
+                    }
                 }
             ],
             "transformation": [
@@ -468,23 +471,23 @@
         },
         "41": {
             "name": "menu Container",
-            "parent": "37",
+            "parent": "89",
             "transformation": [
-                -1.000003457069397,
+                -1.0000035762786866,
                 0.0,
                 0.0,
                 0.0,
                 0.0,
-                -0.00030207636882551014,
-                -1.0,
+                -0.0003020763397216797,
+                -1.0000001192092896,
                 0.0,
                 0.0,
-                -1.0,
-                0.00030213597347028553,
+                -0.9999998807907105,
+                0.0003019571304321289,
                 0.0,
-                -0.10000021010637284,
-                0.0,
-                -0.05000010505318642,
+                -0.10000022500753403,
+                1.1920928955078126e-7,
+                -0.05000002682209015,
                 1.0
             ]
         },
@@ -545,13 +548,15 @@
                                 0.004999999888241291
                             ]
                         }
-                    }
+                    },
+                    "active": true
                 },
                 {
                     "type": "reset-ball",
                     "reset-ball": {
                         "hand": "60",
-                        "ball": "57"
+                        "ball": "57",
+                        "physicsObject": "35"
                     }
                 }
             ],
@@ -945,6 +950,1571 @@
                 0.0,
                 1.0
             ]
+        },
+        "62": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.7636013031005859,
+                1.6295615434646609,
+                -2.4073641300201418,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere",
+                        "sphere": {
+                            "radius": 1.0
+                        }
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "63": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.198859214782715,
+                1.0000004768371585,
+                -1.2196502685546876,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "64": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                4.027058601379395,
+                1.0,
+                -1.4587479829788209,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "65": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                3.3756725788116457,
+                0.3391554951667786,
+                -1.050682783126831,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "66": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                4.537193298339844,
+                1.2878881692886353,
+                -0.7608813047409058,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "67": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.32308030128479,
+                0.9999997615814208,
+                -0.10475315153598786,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "68": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.3979577124118805,
+                0.9999988675117492,
+                -0.5945999622344971,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "69": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.635699272155762,
+                0.7304041385650635,
+                0.9695581793785096,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "70": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.833216428756714,
+                1.0000004768371585,
+                0.5931136608123779,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "71": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.809983730316162,
+                1.0000004768371585,
+                -0.3244779407978058,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "72": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                4.00876522064209,
+                1.0000004768371585,
+                0.1787261962890625,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "73": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.366008043289185,
+                1.0000004768371585,
+                -2.958796262741089,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "74": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.0451712608337404,
+                1.0,
+                -3.077327013015747,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "75": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.120047926902771,
+                1.6295615434646609,
+                -3.56717324256897,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere",
+                        "sphere": {
+                            "radius": 1.0
+                        }
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "76": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.555306911468506,
+                1.0000004768371585,
+                -2.3794596195220949,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "77": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                4.088961601257324,
+                1.0,
+                -1.6308773756027222,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "78": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                3.1638362407684328,
+                1.6295615434646609,
+                -2.1207239627838136,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere",
+                        "sphere": {
+                            "radius": 1.0
+                        }
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "79": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                4.59909725189209,
+                1.0000004768371585,
+                -0.9330102205276488,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "80": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.0110628604888917,
+                1.0,
+                -0.8226612210273743,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "81": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.08593767881393433,
+                1.6295615434646609,
+                -1.3125081062316897,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere",
+                        "sphere": {
+                            "radius": 1.0
+                        }
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "82": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.52119779586792,
+                1.0000004768371585,
+                -0.1247941255569458,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "83": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.8593367338180545,
+                1.0000004768371585,
+                -4.038399696350098,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "84": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.294124960899353,
+                1.629562497138977,
+                -3.680779695510864,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere",
+                        "sphere": {
+                            "radius": 1.0
+                        }
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "85": {
+            "name": "virus",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.6523667573928833,
+                1.0000004768371585,
+                -2.321648120880127,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "virus",
+                    "virus": {
+                        "top": "47",
+                        "stem": "50",
+                        "sphere": "9",
+                        "topMaterialBase": "22",
+                        "stemMaterialBase": "20",
+                        "sphereMaterialBase": "25",
+                        "spikes": 128,
+                        "materialBase": "56"
+                    }
+                },
+                {
+                    "type": "hover",
+                    "hover": {
+                        "speed": 5.0,
+                        "depth": 0.02500000037252903
+                    }
+                },
+                {
+                    "type": "rotation",
+                    "rotation": {
+                        "speedX": 10.0,
+                        "speedZ": 25.0,
+                        "speedY": 100.0
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "sphere"
+                    }
+                }
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "86": {
+            "name": "Mesh.002",
+            "parent": "43",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "87"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.10000000149011612,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "88": {
+            "name": "Fixed Console",
+            "components": [
+                {
+                    "type": "console-vr",
+                    "console-vr": {
+                        "_myHandedness": "left",
+                        "_myPlaneMesh": "7",
+                        "_myPlaneMaterial": "40",
+                        "_myTextMaterial": "DefaultFontMaterial",
+                        "_mShowOnStart": true
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -2.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "89": {
+            "name": "MenuViz",
+            "parent": "37"
+        },
+        "90": {
+            "name": "Mesh.003",
+            "parent": "43",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0000131130218506,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0000009536743165,
+                2.9103830456733706e-11,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0001468658447265625,
+                2.141251564025879,
+                -0.0014495849609375,
+                1.0
+            ]
+        },
+        "91": {
+            "name": "ConsoleViz",
+            "components": [
+                {
+                    "type": "console-vr",
+                    "console-vr": {
+                        "_myHandedness": "none",
+                        "_mShowOnStart": true,
+                        "_myPlaneMesh": "7",
+                        "_myPlaneMaterial": "40",
+                        "_myTextMaterial": "DefaultFontMaterial"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.0,
+                1.0
+            ]
         }
     },
     "meshes": {
@@ -1142,6 +2712,18 @@
                     1.0
                 ]
             }
+        },
+        "87": {
+            "name": "ButtonHighlight",
+            "shader": "MeshVisualizer",
+            "MeshVisualizer": {
+                "color": [
+                    0.0,
+                    0.4470588266849518,
+                    1.0,
+                    1.0
+                ]
+            }
         }
     },
     "shaders": {
@@ -1251,7 +2833,7 @@
                     "unbounded": true
                 }
             },
-            "visualizeColliders": true
+            "visualizeColliders": false
         },
         "editor": {
             "serverPort": 7550,

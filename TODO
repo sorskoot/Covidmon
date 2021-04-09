@@ -1,4 +1,10 @@
 Must have:
+    UI stuff:
+        ☐ better hand menu
+            ☐ feedback, visualize we touched that button
+            ☐ feedback, visualize 'hover'
+        ☐ popups
+
      ☐ spawn random virusses
         ~ genome mutates a little
         ~ fixed number of mutationPoints
@@ -28,3 +34,5 @@ Could have:
 
 
 Would like:
+
+

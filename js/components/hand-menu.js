@@ -1,7 +1,8 @@
 /// <reference path="../../deploy/wonderland.js" />
 
 WL.registerComponent('hand-menu', {
-    handedness: { type: WL.Type.Enum, default: 'left', values: ['left', 'right'] }
+    handedness: { type: WL.Type.Enum, default: 'left', values: ['left', 'right'] },
+    eye: { type: WL.Type.Object }
 }, {
     init: function () {
         this.handedness = ['left', 'right'][this.handedness];
@@ -11,12 +12,12 @@ WL.registerComponent('hand-menu', {
         this.session = null;
         this.refSpace = null;
         this.hasPose = false;
-
+        this.viz = this.object.children[0];
         if (!('XRHand' in window)) {
             console.warn("WebXR Hand Tracking not supported by this browser.");
             this.active = false;
             return;
-        }        
+        }
     },
     update: function (dt) {
         if (!this.session) {
@@ -41,12 +42,24 @@ WL.registerComponent('hand-menu', {
                             p.transform.position.x,
                             p.transform.position.y,
                             p.transform.position.z]);
+                        
+                        let forward = [0, 0, 0];
+                        this.object.getForward(forward);
+                        let eyepos = [0, 0, 0];
+                        this.eye.getTranslationWorld(eyepos);
+                        let containerpos = [0,0,0];
+                        this.viz.getTranslationLocal(containerpos)
+                        if (glMatrix.vec3.dot(forward, eyepos) >= 1) {
+                            containerpos[1] = 0;// show menu
+                            
+                        } else {
+                            containerpos[1] = 10000;// hide menu         
+                        }
+                        this.viz.setTranslationLocal(containerpos);
                     }
                 }
-
-           
             }
-        }      
+        }
     },
 
     setupVREvents: function (s) {

@@ -36,7 +36,7 @@ WL.registerComponent('activate-physx-on-velocity', {
                 this.ballPhysics.velocity.set(vVector);
                 this.ballPhysics.active = true;
                 this.ball.dropped = true;
-                setTimeout(this.reset.bind(this), 5000);
+               //setTimeout(this.reset.bind(this), 5000);
                 //  this.physx.addForce(vVector);
 
             }
